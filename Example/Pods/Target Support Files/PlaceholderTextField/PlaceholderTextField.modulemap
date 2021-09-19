@@ -1,0 +1,6 @@
+framework module PlaceholderTextField {
+  umbrella header "PlaceholderTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}

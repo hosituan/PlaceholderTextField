@@ -1,0 +1,16 @@
+PODS:
+  - PlaceholderTextField (0.1.0)
+
+DEPENDENCIES:
+  - PlaceholderTextField (from `../`)
+
+EXTERNAL SOURCES:
+  PlaceholderTextField:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PlaceholderTextField: cd0b986cf951a080fa05bd2eb9c678f1d8161b30
+
+PODFILE CHECKSUM: 42f25312ef5291cee6b0f947ef469dc1800d413e
+
+COCOAPODS: 1.10.2

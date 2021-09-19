@@ -40,12 +40,12 @@
 		607FACE51AFB9204008FA782 /* PlaceholderTextField_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaceholderTextField_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6EF1F6690FBE467121001DBE /* PlaceholderTextField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PlaceholderTextField.podspec; path = ../PlaceholderTextField.podspec; sourceTree = "<group>"; };
-		814433835E7807CE508BF23B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6EF1F6690FBE467121001DBE /* PlaceholderTextField.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PlaceholderTextField.podspec; path = ../PlaceholderTextField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		814433835E7807CE508BF23B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		89BAAF3794E8BFCF48690207 /* Pods_PlaceholderTextField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaceholderTextField_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7CBC81A4AA102E4A67F61E /* Pods-PlaceholderTextField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceholderTextField_Example.release.xcconfig"; path = "Target Support Files/Pods-PlaceholderTextField_Example/Pods-PlaceholderTextField_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B344D3BE855F17517E20225F /* Pods_PlaceholderTextField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlaceholderTextField_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1D3858068FC2DD793A2A03F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E1D3858068FC2DD793A2A03F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E5B1A113765791C60A702DE3 /* Pods-PlaceholderTextField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlaceholderTextField_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PlaceholderTextField_Tests/Pods-PlaceholderTextField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				E5B1A113765791C60A702DE3 /* Pods-PlaceholderTextField_Tests.debug.xcconfig */,
 				3B3B4E797BC052E9B2ADD396 /* Pods-PlaceholderTextField_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
