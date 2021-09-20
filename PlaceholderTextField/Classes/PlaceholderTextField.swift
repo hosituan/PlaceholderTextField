@@ -85,7 +85,11 @@ public class PlaceholderTextView: UIView {
     open var normalColor = UIColor.colorFromHexString("#d8dbdf")
     
     open var placeholderColor = UIColor.colorFromHexString("#7c7f83")
-    open var borderCornerRadius: CACornerMask = [.layerMaxXMaxYCorner, .layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner]
+    open var borderCornerRadius: CACornerMask = [.layerMaxXMaxYCorner, .layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner] {
+        didSet {
+            updateBorder()
+        }
+    }
     
     
     lazy var textField = UITextField().then {
