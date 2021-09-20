@@ -19,12 +19,16 @@ public class PlaceholderTextView: UIView {
     }
     
     open var text: String? {
-        didSet {
-            textField.text = text
+        get {
+            return textField.text
+        }
+        set {
+            textField.text = newValue
             updateClearButton()
             animate(isAnimated: false)
         }
     }
+    
     open var height: CGFloat? {
         didSet {
             if let height = height {
@@ -32,6 +36,11 @@ public class PlaceholderTextView: UIView {
                     $0.height.equalTo(height)
                 }
             }
+        }
+    }
+    open var cornerRadius: CGFloat = 5 {
+        didSet {
+            updateBorder()
         }
     }
     open var isSecure = false {
@@ -168,7 +177,7 @@ public class PlaceholderTextView: UIView {
     }
     
     private func updateBorder() {
-        self.layer.cornerRadius = 5
+        self.layer.cornerRadius = cornerRadius
         self.layer.maskedCorners = borderCornerRadius
         self.layer.borderWidth = 1
         self.layer.borderColor = normalColor.cgColor

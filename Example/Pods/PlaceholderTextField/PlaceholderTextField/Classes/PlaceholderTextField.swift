@@ -19,12 +19,16 @@ public class PlaceholderTextView: UIView {
     }
     
     open var text: String? {
-        didSet {
-            textField.text = text
+        get {
+            return textField.text
+        }
+        set {
+            textField.text = newValue
             updateClearButton()
             animate(isAnimated: false)
         }
     }
+    
     open var height: CGFloat? {
         didSet {
             if let height = height {
