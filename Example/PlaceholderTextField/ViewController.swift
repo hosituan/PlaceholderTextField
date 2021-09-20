@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import PlaceholderTextView
+import PlaceholderTextField
 import SnapKit
 
 class ViewController: UIViewController {

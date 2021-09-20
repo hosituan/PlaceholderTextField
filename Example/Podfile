@@ -1,9 +1,9 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '11.0'
 
 target 'PlaceholderTextField_Example' do
-  pod 'PlaceholderTextField', :path => '../'
+  pod 'PlaceholderTextField', '~> 0.1.0'
 
   target 'PlaceholderTextField_Tests' do
     inherit! :search_paths

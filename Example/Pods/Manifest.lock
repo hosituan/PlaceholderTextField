@@ -1,16 +1,33 @@
 PODS:
-  - PlaceholderTextField (0.1.0)
+  - PlaceholderTextField (0.1.0):
+    - PlaceholderTextField/Core (= 0.1.0)
+    - SnapKit
+    - SwiftRichString
+    - Then
+  - PlaceholderTextField/Core (0.1.0):
+    - SnapKit
+    - SwiftRichString
+    - Then
+  - SnapKit (5.0.1)
+  - SwiftRichString (3.7.2)
+  - Then (2.7.0)
 
 DEPENDENCIES:
-  - PlaceholderTextField (from `../`)
+  - PlaceholderTextField (~> 0.1.0)
 
-EXTERNAL SOURCES:
-  PlaceholderTextField:
-    :path: "../"
+SPEC REPOS:
+  trunk:
+    - PlaceholderTextField
+    - SnapKit
+    - SwiftRichString
+    - Then
 
 SPEC CHECKSUMS:
-  PlaceholderTextField: cd0b986cf951a080fa05bd2eb9c678f1d8161b30
+  PlaceholderTextField: 4d27b74cb44c1dab9c723671325311e1a3c14825
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftRichString: d61b807db1f8834c26fee92b6dd3e1be2dc5af03
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: 42f25312ef5291cee6b0f947ef469dc1800d413e
+PODFILE CHECKSUM: d6869aaf383e81c500abebb28aa198294fb9209e
 
-COCOAPODS: 1.10.2
+COCOAPODS: 1.11.2
