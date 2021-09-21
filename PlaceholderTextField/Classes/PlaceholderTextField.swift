@@ -323,7 +323,7 @@ public class PlaceholderTextField: UIView {
     }
 }
 
-extension PlaceholderTextView: UITextFieldDelegate {
+extension PlaceholderTextField: UITextFieldDelegate {
     @objc func edittingChanged() {
         animate()
         updateClearButton()

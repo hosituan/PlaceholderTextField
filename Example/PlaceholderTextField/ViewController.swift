@@ -21,33 +21,33 @@ class ViewController: UIViewController {
             $0.spacing = 16
         }
         view.addSubview(stackView)
-        let textView1 = PlaceholderTextView(placeholder: "Height").then  {
+        let textView1 = PlaceholderTextField(placeholder: "Height").then  {
             $0.height = 80
             $0.textColor = .red
         }
         
-        let textView2 = PlaceholderTextView().then {
+        let textView2 = PlaceholderTextField().then {
             $0.placeholder = "Secure"
             $0.isSecure = true
         }
-        let textView3 = PlaceholderTextView().then {
+        let textView3 = PlaceholderTextField().then {
             $0.placeholder = "CornerRadius"
             $0.borderCornerRadius = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         }
-        let textView4 = PlaceholderTextView().then {
+        let textView4 = PlaceholderTextField().then {
             $0.placeholder = "Font"
             $0.font = .systemFont(ofSize: 30)
             
         }
-        let textView5 = PlaceholderTextView().then {
+        let textView5 = PlaceholderTextField().then {
             $0.placeholder = "Required "
             $0.isRequired = true
         }
-        let textView6 = PlaceholderTextView().then {
+        let textView6 = PlaceholderTextField().then {
             $0.placeholder = "Hide clear button "
             $0.hasClearButton = false
         }
-        let textView7 = PlaceholderTextView().then {
+        let textView7 = PlaceholderTextField().then {
             $0.placeholder = "Has icon"
             $0.rightIcon = UIImage(named: "iconCamera")
             $0.rightButtonAction = {
