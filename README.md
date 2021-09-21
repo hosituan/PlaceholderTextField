@@ -26,7 +26,7 @@ pod 'PlaceholderTextField'
 
 ### Use case - Init with title and custom height
 ```swift
-  let textView1 = PlaceholderTextView(placeholder: "Height").then  {
+  let textView1 = PlaceholderTextField(placeholder: "Height").then  {
         $0.height = 80
         $0.textColor = .red
   }  
@@ -34,7 +34,7 @@ pod 'PlaceholderTextField'
 
 ### Use case - Customize
 ```swift
-  let textView = PlaceholderTextView()
+  let textView = PlaceholderTextField()
   // Title
   textView.placeholder = "Placeholder title"
   // Required
