@@ -168,7 +168,7 @@ public class PlaceholderTextField: UIView {
     }
     
     private func getImageFromBundle(name: String) -> UIImage? {
-       let podBundle = Bundle(for: PlaceholderTextView.self)
+       let podBundle = Bundle(for: PlaceholderTextField.self)
        if let url = podBundle.url(forResource: "PlaceholderTextView", withExtension: "bundle") {
           let bundle = Bundle(url: url)
           return UIImage(named: name, in: bundle, compatibleWith: nil)
