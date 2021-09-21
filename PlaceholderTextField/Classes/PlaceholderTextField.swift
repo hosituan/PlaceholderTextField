@@ -11,7 +11,7 @@ enum InputFieldState {
 }
 
 
-public class PlaceholderTextView: UIView {
+public class PlaceholderTextField: UIView {
     open var placeholder = "Placeholder" {
         didSet {
             updateTitleText()
