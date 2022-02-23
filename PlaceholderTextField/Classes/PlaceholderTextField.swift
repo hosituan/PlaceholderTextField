@@ -23,6 +23,7 @@ public class PlaceholderTextField: UIView {
             return textField.text
         }
         set {
+            isActive = !(newValue ?? "").isEmpty
             textField.text = newValue
             updateClearButton()
             animate(isAnimated: false)
