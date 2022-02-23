@@ -119,7 +119,7 @@ public class PlaceholderTextField: UIView {
         $0.addTarget(self, action: #selector(clearTextAction), for: .touchUpInside)
         $0.isHidden = true
         $0.imageView?.contentMode = .scaleAspectFit
-        $0.imageEdgeInsets = UIEdgeInsetsMake(12, 12, 12, 12)
+        $0.imageEdgeInsets = UIEdgeInsets(top: 12, left: 12, bottom: 12, right: 12)
     }
     
     private var moveOffset: CGFloat = 12
@@ -333,7 +333,7 @@ extension PlaceholderTextField: UITextFieldDelegate {
         self.isActive = true
         UIView.animate(withDuration: 0.1) {
             self.updateTitleText()
-            self.superview?.bringSubview(toFront: self)
+            self.superview?.bringSubviewToFront(self)
         }
         animate()
         fieldState = .editting
@@ -345,7 +345,7 @@ extension PlaceholderTextField: UITextFieldDelegate {
         self.isActive = textField.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).isEmpty == false
         UIView.animate(withDuration: 0.1) {
             self.updateTitleText()
-            self.superview?.bringSubview(toFront: self)
+            self.superview?.bringSubviewToFront(self)
         }
         animate()
         if !isRequired {
@@ -358,7 +358,7 @@ extension PlaceholderTextField: UITextFieldDelegate {
         updateClearButton()
     }
     
-    private func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if limitCharacter >= 1 {
             if let textFieldText = textField.text,
                let rangeOfTextToReplace = Range(range, in: textFieldText) {
